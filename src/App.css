@@ -1,38 +1,117 @@
+body {
+  background-image: url("./img/1540001.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.passive {
+  color: rgba(93, 99, 91, 0.8);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100%;
+  font-size: 0.8vw;
+  color: wheat;
 }
 
-.App-link {
-  color: #61dafb;
+.body {
+  min-height: 200px;
+  position: relative;
+  height: 25%;
+  width: 50%;
+  background-color: rgba(178, 191, 248, 0.9);
+  border-radius: 0.25rem;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CardBody {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+  width: 100%;
+}
+
+form {
+  padding-left: 2%;
+  padding-top: 2%;
+}
+form select {
+  width: 15%;
+  font-size: medium;
+}
+
+.Card {
+  position: relative;
+
+  text-align: center;
+  width: 16%;
+
+  
+}
+.Card span {
+  margin: 0 10px;
+}
+.Weather {
+  width: 100%;
+
+  
+}
+
+.Active{
+  border: 1px solid rgb(150, 131, 131);
+  border-radius: 0.25rem;
+  background-color: rgba(178, 191, 248, 1); ;
+}
+
+.Clouds::before {
+  content: url("http://openweathermap.org/img/wn/02d@2x.png");
+  width: 100%;
+  height: auto;
+}
+
+.Rain::before {
+  content: url("http://openweathermap.org/img/wn/10d@2x.png");
+  width: 100%;
+  height: auto;
+}
+.Thunderstorm::before {
+  content: url("http://openweathermap.org/img/wn/11d@2x.png");
+  width: 100%;
+  height: auto;
+}
+.Drizzle::before {
+  content: url("http://openweathermap.org/img/wn/09d@2x.png");
+  width: 100%;
+  height: auto;
+}
+.Snow::before {
+  content: url("http://openweathermap.org/img/wn/13d@2x.png");
+  width: 100%;
+  height: auto;
+}
+.Atmosphere::before {
+  content: url("http://openweathermap.org/img/wn/50d@2x.png");
+  width: 100%;
+  height: auto;
+}
+.Clear::before {
+  content: url("http://openweathermap.org/img/wn/01d@2x.png");
+  width: 100%;
+  height: auto;
+}
+.Clouds::before {
+  content: url("http://openweathermap.org/img/wn/02d@2x.png");
+  width: 100%;
+  height: auto;
 }
