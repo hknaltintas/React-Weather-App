@@ -9,7 +9,7 @@ export const WeatherProvider = ({ children }) => {
 
   useEffect(() => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/forecast?q=${selectCity},tr&appid=64e4b8270d56ddc04e8b3aadd7afc7a2&units=metric`
+      `https://api.openweathermap.org/data/2.5/forecast?q=${selectCity},tr&appid={id}&units=metric`
     )
       .then((res) => res.json())
       .then((data) => setWeather(data.list));
